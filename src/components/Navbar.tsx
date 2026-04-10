@@ -18,10 +18,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <a href="#home" className="flex items-center gap-3">
           <span className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-heading font-bold text-lg">
-            J
+            K
           </span>
           <div className="hidden sm:block">
-            <p className="font-heading font-bold text-foreground leading-tight">John Doe</p>
+            <p className="font-heading font-bold text-foreground leading-tight">Kalisa Kenny</p>
             <p className="text-xs text-muted-foreground">Full-Stack Developer</p>
           </div>
         </a>
