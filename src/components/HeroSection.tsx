@@ -40,8 +40,8 @@ const HeroSection = () => (
           <Button asChild variant="outline" size="lg" className="rounded-full gap-2 border-primary text-primary hover:bg-primary/5">
             <a href="#work"><Briefcase size={18} /> View Portfolio</a>
           </Button>
-          <Button variant="ghost" size="lg" className="rounded-full gap-2 text-muted-foreground">
-            <Download size={18} /> Resume
+          <Button asChild variant="ghost" size="lg" className="rounded-full gap-2 text-muted-foreground">
+            <a href="/Kalisa_Kenny_CV.pdf" download><Download size={18} /> Resume</a>
           </Button>
         </div>
 
