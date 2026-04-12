@@ -25,7 +25,7 @@ const TestimonialsSection = () => (
       <div className="grid md:grid-cols-3 gap-8">
         {testimonials.map((t, i) => (
           <motion.div
-            key={t.name}
+            key={i}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -33,16 +33,7 @@ const TestimonialsSection = () => (
             className="bg-card rounded-2xl p-8 border shadow-sm relative"
           >
             <Quote className="text-primary/20 mb-4" size={32} />
-            <p className="text-muted-foreground leading-relaxed mb-6 italic">"{t.text}"</p>
-            <div className="flex items-center gap-3">
-              <span className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-heading font-bold text-sm">
-                {t.initial}
-              </span>
-              <div>
-                <p className="font-semibold text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
-              </div>
-            </div>
+            <p className="text-muted-foreground leading-relaxed italic">"{t.text}"</p>
           </motion.div>
         ))}
       </div>
