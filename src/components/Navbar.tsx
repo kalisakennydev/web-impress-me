@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         <Button asChild className="hidden md:inline-flex rounded-full">
-          <a href="#contact">Hire Me</a>
+          <a href="mailto:kalisakenny@gmail.com">Hire Me</a>
         </Button>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -51,7 +51,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button asChild className="rounded-full w-fit">
-            <a href="#contact" onClick={() => setOpen(false)}>Hire Me</a>
+            <a href="mailto:kalisakenny@gmail.com" onClick={() => setOpen(false)}>Hire Me</a>
           </Button>
         </div>
       )}

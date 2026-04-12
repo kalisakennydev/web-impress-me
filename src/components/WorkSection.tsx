@@ -44,10 +44,10 @@ const WorkSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="group bg-card rounded-2xl overflow-hidden border shadow-sm hover:shadow-md transition-shadow"
+            className="group bg-card rounded-2xl overflow-hidden border shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
           >
             <div className="relative overflow-hidden">
-              <img src={p.img} alt={p.title} className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={p.img} alt={p.title} className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500" />
             </div>
             <div className="p-6">
               <p className="text-xs text-primary font-semibold uppercase tracking-wider mb-1">Project {p.num}</p>

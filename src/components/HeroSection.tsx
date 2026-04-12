@@ -61,8 +61,8 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.2 }}
         className="relative hidden lg:block"
       >
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px]">
-          <img src={profileImg} alt="Profile" className="w-full h-full object-cover" />
+        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] group">
+          <img src={profileImg} alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         </div>
         <div className="absolute bottom-6 right-[-20px] bg-card rounded-xl shadow-lg px-4 py-3 flex items-center gap-3 border">
           <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
