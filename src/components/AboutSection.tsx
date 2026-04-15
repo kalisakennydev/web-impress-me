@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { GraduationCap, MapPin } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
-const techStack = ["React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL", "MongoDB", "AWS", "Docker", "Tailwind CSS"];
+const techStack = ["React", "Next.js", "TypeScript", "Node.js", "Python", "Frappe", "ERPNext", "PostgreSQL", "MongoDB", "AWS", "Docker", "Tailwind CSS"];
 
 const skills = [
   { name: "React/Next.js", pct: 90 },
