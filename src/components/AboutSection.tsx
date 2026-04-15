@@ -48,11 +48,12 @@ const AboutSection = () => (
         </motion.div>
 
         <motion.div
+          id="skills"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-card rounded-2xl p-8 border shadow-sm"
+          className="bg-card rounded-2xl p-8 border shadow-sm scroll-mt-20"
         >
           <h3 className="font-heading font-bold text-lg mb-6">Core Skills</h3>
           <div className="space-y-5">
