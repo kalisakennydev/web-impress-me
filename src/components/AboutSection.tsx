@@ -8,6 +8,7 @@ const skills = [
   { name: "React/Next.js", pct: 90 },
   { name: "TypeScript", pct: 85 },
   { name: "Node.js", pct: 80 },
+  { name: "Frappe/ERPNext", pct: 80 },
   { name: "UI/UX Design", pct: 75 },
 ];
 
