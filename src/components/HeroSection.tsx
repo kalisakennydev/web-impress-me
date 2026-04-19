@@ -59,12 +59,12 @@ const HeroSection = () => (
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative hidden lg:flex justify-end"
+        className="relative flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0"
       >
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] w-full max-w-[440px] group">
+        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] w-full max-w-[280px] sm:max-w-[360px] lg:max-w-[440px] group">
           <img src={profileImg} alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         </div>
-        <div className="absolute bottom-6 right-[-10px] bg-card rounded-xl shadow-lg px-4 py-3 flex items-center gap-3 border">
+        <div className="absolute bottom-4 right-2 sm:right-4 lg:bottom-6 lg:right-[-10px] bg-card rounded-xl shadow-lg px-3 py-2 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-3 border">
           <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
             <Zap className="text-primary" size={20} />
           </span>
