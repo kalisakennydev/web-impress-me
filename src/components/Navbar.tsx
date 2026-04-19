@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           <ThemeToggle />
-          <Button asChild size="sm" className="rounded-full hidden sm:inline-flex">
+          <Button asChild size="sm" className="rounded-full text-xs sm:text-sm px-3 sm:px-4">
             <a href="mailto:kalisakenny@gmail.com">Hire Me</a>
           </Button>
         </div>
