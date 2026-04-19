@@ -59,18 +59,30 @@ const HeroSection = () => (
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0"
+        className="relative flex justify-center lg:justify-end order-first lg:order-last mb-6 lg:mb-0"
       >
-        <div className="rounded-2xl overflow-hidden aspect-[3/4] max-h-[520px] w-full max-w-[280px] sm:max-w-[360px] lg:max-w-[440px] group">
-          <img src={profileImg} alt="Profile" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        {/* Decorative gradient blob */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-primary/30 via-primary/10 to-transparent blur-3xl" />
         </div>
-        <div className="absolute bottom-4 right-2 sm:right-4 lg:bottom-6 lg:right-[-10px] bg-card rounded-xl shadow-lg px-3 py-2 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-3 border">
-          <span className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-            <Zap className="text-primary" size={20} />
+
+        <div className="relative rounded-[2rem] overflow-hidden aspect-[3/4] max-h-[520px] w-full max-w-[260px] sm:max-w-[340px] lg:max-w-[440px] group ring-1 ring-border shadow-2xl">
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          {/* subtle overlay for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent" />
+        </div>
+
+        <div className="absolute -bottom-2 right-2 sm:right-0 lg:bottom-6 lg:right-[-10px] bg-card/95 backdrop-blur rounded-xl shadow-lg px-3 py-2 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-3 border">
+          <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center">
+            <Zap className="text-primary" size={18} />
           </span>
           <div>
-            <p className="font-semibold text-sm">Quick Turnaround</p>
-            <p className="text-xs text-muted-foreground">2-4 weeks delivery</p>
+            <p className="font-semibold text-xs sm:text-sm">Quick Turnaround</p>
+            <p className="text-[10px] sm:text-xs text-muted-foreground">2-4 weeks delivery</p>
           </div>
         </div>
       </motion.div>

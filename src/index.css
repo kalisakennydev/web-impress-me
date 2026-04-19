@@ -99,4 +99,6 @@
   .section-alt {
     background-color: hsl(var(--section-bg));
   }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 }
